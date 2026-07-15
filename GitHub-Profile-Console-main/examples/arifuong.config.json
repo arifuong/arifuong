@@ -1,0 +1,110 @@
+{
+  "$schema": "../profile.schema.json",
+  "profile": {
+    "name": "Mohamad Arifin Hasbi",
+    "username": "arifuong",
+    "headline": "Full Stack Developer | Web Developer",
+    "affiliation": "STMIK MARDIRA INDONESIA",
+    "location": "Majalaya, Bandung, Indonesia",
+    "status": "Mahasiswa Informatika",
+    "about": [
+      "Sedang belajar Laravel, React, JavaScript, dan PHP. Menyukai pengembangan website modern dan berfokus pada Full Stack Web Development.",
+      "Mahasiswa Informatika STMIK MARDIRA INDONESIA, berdomisili di Majalaya, Kabupaten Bandung. Selalu belajar teknologi baru melalui project nyata.",
+      "Memiliki minat dalam membangun aplikasi web yang modern, cepat, dan responsif."
+    ]
+  },
+  "research": {
+    "primary": "Web Development",
+    "direction": "Full Stack Engineering",
+    "themes": "Laravel / React / Modern Web",
+    "narrative": "I focus on building modern web applications using Laravel and React, combining backend reliability with responsive frontend experiences. Every project is an opportunity to learn and improve."
+  },
+  "focus": [
+    {
+      "name": "Full Stack Development",
+      "description": "Building complete web applications from database to user interface."
+    },
+    {
+      "name": "Web Development",
+      "description": "Creating modern, responsive, and accessible websites."
+    },
+    {
+      "name": "Frontend Development",
+      "description": "Crafting interactive user interfaces with React and Tailwind CSS."
+    },
+    {
+      "name": "Backend Development",
+      "description": "Designing robust APIs and server-side logic with Laravel and Node.js."
+    },
+    {
+      "name": "REST API Development",
+      "description": "Building scalable and well-documented RESTful APIs."
+    },
+    {
+      "name": "Responsive Web Design",
+      "description": "Ensuring seamless experiences across all devices and screen sizes."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Portfolio Website",
+      "url": "https://github.com/arifuong",
+      "homepage": "",
+      "focus": "Personal portfolio",
+      "summary": "A personal portfolio website showcasing projects and skills in web development.",
+      "heroLabel": "Portfolio"
+    },
+    {
+      "name": "Laravel CRUD",
+      "url": "https://github.com/arifuong",
+      "homepage": "",
+      "focus": "Backend application",
+      "summary": "A full-featured CRUD application built with Laravel demonstrating database operations.",
+      "heroLabel": "Laravel app"
+    },
+    {
+      "name": "React Dashboard",
+      "url": "https://github.com/arifuong",
+      "homepage": "",
+      "focus": "Frontend dashboard",
+      "summary": "An interactive admin dashboard built with React and modern UI components.",
+      "heroLabel": "Dashboard"
+    },
+    {
+      "name": "Full Stack App",
+      "url": "https://github.com/arifuong",
+      "homepage": "",
+      "focus": "Full stack project",
+      "summary": "A complete full stack web application combining Laravel backend with React frontend.",
+      "heroLabel": "Full stack"
+    }
+  ],
+  "techStack": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Bootstrap",
+    "Tailwind CSS",
+    "React",
+    "PHP",
+    "Laravel",
+    "Node.js",
+    "MySQL",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Postman"
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "value": "arifuong",
+      "url": "https://github.com/arifuong",
+      "logo": "github",
+      "color": "0B1220"
+    }
+  ],
+  "activity": { "enabled": true, "limit": 6 },
+  "appearance": { "palette": "signal" },
+  "footer": "Building modern web applications and sharing what works."
+}
