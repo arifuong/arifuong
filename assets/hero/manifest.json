@@ -1,10 +1,10 @@
 {
   "generator": "agent-console-v1",
-  "version": "arifuong",
+  "version": "4f261175",
   "assets": {
-    "desktopDark": "agent-console-arifuong-dark.svg",
-    "desktopLight": "agent-console-arifuong-light.svg",
-    "mobileDark": "agent-console-arifuong-mobile-dark.svg",
-    "mobileLight": "agent-console-arifuong-mobile-light.svg"
+    "desktopDark": "agent-console-4f261175-dark.svg",
+    "desktopLight": "agent-console-4f261175-light.svg",
+    "mobileDark": "agent-console-4f261175-mobile-dark.svg",
+    "mobileLight": "agent-console-4f261175-mobile-light.svg"
   }
 }
