@@ -7,6 +7,7 @@
     "affiliation": "STMIK MARDIRA INDONESIA",
     "location": "Majalaya, Bandung, Indonesia",
     "status": "Mahasiswa Informatika",
+    "avatar": "assets/portrait.png",
     "about": [
       "Saya adalah mahasiswa Informatika yang memiliki ketertarikan pada pengembangan aplikasi web modern.",
       "Saat ini saya sedang mendalami Laravel, React, JavaScript, PHP, Node.js, dan Python.",
@@ -46,13 +47,14 @@
     }
   ],
   "projects": [
-    {
-      "name": "ProjectPBO",
-      "url": "https://github.com/arifuong/projectpbo",
-      "homepage": "",
-      "focus": "Java OOP",
-      "summary": "Project Object Oriented Programming menggunakan Java untuk pembelajaran konsep OOP.",
-      "heroLabel": "Java OOP"
+    {{
+  "name": "ProjectPBO",
+  "url": "https://github.com/arifuong/projectpbo",
+  "homepage": "",
+  "focus": "Pemrosesan Dokumen PDF",
+  "summary": "Aplikasi Java berbasis Object-Oriented Programming untuk mengekstrak dan mengolah teks dari dokumen PDF menjadi data yang dapat diproses.",
+  "heroLabel": "PDF ke Teks"
+}
     },
     {
       "name": "Tracer Study",

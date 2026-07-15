@@ -82,16 +82,29 @@ function buildProfileLines(config) {
   return lines;
 }
 
-async function validatePortrait(sourceBuffer, sourcePath) {
+async function processPortrait(sourceBuffer, sourcePath) {
   const metadata = await sharp(sourceBuffer).metadata();
+  let buffer = sourceBuffer;
+  let needsProcessing = false;
+
   if (!metadata.hasAlpha) {
-    throw new Error(`Portrait must have a transparent background. ${sourcePath} does not contain an alpha channel.`);
+    console.warn(`Warning: ${sourcePath} does not have a transparent background. Cropping to square and adding alpha channel.`);
+    needsProcessing = true;
+  } else {
+    const { channels } = await sharp(buffer).ensureAlpha().extractChannel("alpha").stats();
+    if (channels[0].min === 255) {
+      console.warn(`Warning: ${sourcePath} background may not be transparent. For best results, use a transparent PNG.`);
+    }
   }
 
-  const { channels } = await sharp(sourceBuffer).ensureAlpha().extractChannel("alpha").stats();
-  if (channels[0].min === 255) {
-    throw new Error(`Portrait must contain transparent pixels. Remove the background from ${sourcePath} before generating.`);
+  if (metadata.width !== metadata.height || needsProcessing) {
+    const size = Math.min(metadata.width, metadata.height);
+    const pipeline = sharp(buffer).resize(size, size, { fit: "cover", position: "center" });
+    if (!metadata.hasAlpha) pipeline.ensureAlpha();
+    buffer = await pipeline.png().toBuffer();
   }
+
+  return buffer;
 }
 
 async function samplePortrait(sourceBuffer, columns, rows) {
@@ -279,8 +292,7 @@ async function cleanOldAssets(outputDirectory, currentFiles, version) {
 }
 
 export async function generateHeroAssets({ config, sourcePath, outputDirectory }) {
-  const sourceBuffer = await readFile(sourcePath);
-  await validatePortrait(sourceBuffer, sourcePath);
+  const sourceBuffer = await processPortrait(await readFile(sourcePath), sourcePath);
 
   const version = config.profile.username;
   const palette = paletteDefinitions[config.appearance.palette];

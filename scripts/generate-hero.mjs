@@ -1,31 +1,54 @@
 #!/usr/bin/env node
 
-import { mkdtemp, rm } from "node:fs/promises";
+import { access, mkdtemp, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { resolve } from "node:path";
 import { loadConfig, readFlag, repositoryRoot } from "./lib/config.mjs";
 import { generateHeroAssets } from "./lib/hero.mjs";
 
-const source = readFlag("--source");
+async function resolveSource(config) {
+  const source = readFlag("--source");
+  if (source) return { sourcePath: resolve(source) };
 
-let sourcePath;
-let tempDir;
-
-if (source) {
-  sourcePath = resolve(source);
-} else {
   const sharp = (await import("sharp")).default;
-  tempDir = await mkdtemp(join(tmpdir(), "profile-"));
-  sourcePath = join(tempDir, "default.png");
+
+  const avatarPath = config.profile?.avatar || "assets/portrait.png";
+  const fullPath = resolve(repositoryRoot, avatarPath);
+  try {
+    await access(fullPath);
+    console.log(`Using local portrait: ${avatarPath}`);
+    return { sourcePath: fullPath };
+  } catch {}
+
+  const username = config.profile.username;
+  const avatarUrl = `https://github.com/${username}.png`;
+  try {
+    console.log(`Downloading GitHub avatar for ${username}...`);
+    const response = await fetch(avatarUrl);
+    if (response.ok) {
+      const buffer = Buffer.from(await response.arrayBuffer());
+      const tempDir = await mkdtemp(join(tmpdir(), "profile-"));
+      const tempPath = join(tempDir, "avatar.png");
+      await writeFile(tempPath, buffer);
+      return { sourcePath: tempPath, tempDir };
+    }
+  } catch {}
+
+  console.warn("No portrait found. Using transparent placeholder.");
+  const tempDir = await mkdtemp(join(tmpdir(), "profile-"));
+  const tempPath = join(tempDir, "default.png");
   await sharp({
     create: { width: 200, height: 200, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } }
-  }).png().toFile(sourcePath);
+  }).png().toFile(tempPath);
+  return { sourcePath: tempPath, tempDir };
 }
 
+const configPath = readFlag("--config");
+const config = await loadConfig(configPath);
+const { sourcePath, tempDir } = await resolveSource(config);
+
 try {
-  const configPath = readFlag("--config");
-  const config = await loadConfig(configPath);
   const manifest = await generateHeroAssets({
     config,
     sourcePath,

@@ -7,6 +7,7 @@
     "affiliation": "STMIK MARDIRA INDONESIA",
     "location": "Majalaya, Bandung, Indonesia",
     "status": "Mahasiswa Informatika",
+    "avatar": "assets/portrait.png",
     "about": [
       "Saya adalah mahasiswa Informatika yang memiliki ketertarikan pada pengembangan aplikasi web modern.",
       "Saat ini saya sedang mendalami Laravel, React, JavaScript, PHP, Node.js, dan Python.",
