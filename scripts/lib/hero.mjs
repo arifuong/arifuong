@@ -269,9 +269,10 @@ ${system.rows}
 </svg>`;
 }
 
-async function cleanOldAssets(outputDirectory, currentFiles) {
+async function cleanOldAssets(outputDirectory, currentFiles, version) {
   const entries = await readdir(outputDirectory).catch(() => []);
-  const generatedPattern = /^agent-console-[a-f0-9]{8}-(?:mobile-)?(?:dark|light)\.svg$/;
+  const escapedVersion = version.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const generatedPattern = new RegExp(`^agent-console-${escapedVersion}-(?:mobile-)?(?:dark|light)\\.svg$`);
   await Promise.all(entries
     .filter((entry) => generatedPattern.test(entry) && !currentFiles.includes(entry))
     .map((entry) => unlink(resolve(outputDirectory, entry))));
@@ -281,12 +282,7 @@ export async function generateHeroAssets({ config, sourcePath, outputDirectory }
   const sourceBuffer = await readFile(sourcePath);
   await validatePortrait(sourceBuffer, sourcePath);
 
-  const version = createHash("sha256")
-    .update(GENERATOR_VERSION)
-    .update(JSON.stringify(config))
-    .update(sourceBuffer)
-    .digest("hex")
-    .slice(0, 8);
+  const version = config.profile.username;
   const palette = paletteDefinitions[config.appearance.palette];
   const desktopPortrait = await samplePortrait(sourceBuffer, layouts.desktop.portrait.columns, layouts.desktop.portrait.rows);
   const mobilePortrait = await samplePortrait(sourceBuffer, layouts.mobile.portrait.columns, layouts.mobile.portrait.rows);
@@ -304,7 +300,7 @@ export async function generateHeroAssets({ config, sourcePath, outputDirectory }
     writeFile(resolve(outputDirectory, assets.mobileDark), createHeroSvg(config, palette.dark, "mobile", mobilePortrait)),
     writeFile(resolve(outputDirectory, assets.mobileLight), createHeroSvg(config, palette.light, "mobile", mobilePortrait))
   ]);
-  await cleanOldAssets(outputDirectory, Object.values(assets));
+  await cleanOldAssets(outputDirectory, Object.values(assets), version);
 
   const manifest = { generator: GENERATOR_VERSION, version, assets };
   await writeFile(resolve(outputDirectory, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);

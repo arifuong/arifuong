@@ -54,7 +54,7 @@ export function validateConfig(config) {
     assertText(item?.description, `focus[${index}].description`, 180);
   });
 
-  assert(Array.isArray(config.projects) && config.projects.length >= 1 && config.projects.length <= 6, "projects must contain 1 to 6 items.");
+  assert(Array.isArray(config.projects) && config.projects.length >= 1 && config.projects.length <= 8, "projects must contain 1 to 8 items.");
   config.projects.forEach((project, index) => {
     assertText(project?.name, `projects[${index}].name`, 18);
     assertUrl(project?.url, `projects[${index}].url`);

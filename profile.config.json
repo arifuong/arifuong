@@ -8,9 +8,9 @@
     "location": "Majalaya, Bandung, Indonesia",
     "status": "Mahasiswa Informatika",
     "about": [
-      "Sedang belajar Laravel, React, JavaScript, dan PHP. Menyukai pengembangan website modern dan berfokus pada Full Stack Web Development.",
-      "Mahasiswa Informatika STMIK MARDIRA INDONESIA, berdomisili di Majalaya, Kabupaten Bandung. Selalu belajar teknologi baru melalui project nyata.",
-      "Memiliki minat dalam membangun aplikasi web yang modern, cepat, dan responsif."
+      "Saya adalah mahasiswa Informatika yang memiliki ketertarikan pada pengembangan aplikasi web modern.",
+      "Saat ini saya sedang mendalami Laravel, React, JavaScript, PHP, Node.js, dan Python.",
+      "Saya senang membangun aplikasi web yang modern, cepat, responsif, dan mudah digunakan."
     ]
   },
   "research": {
@@ -47,36 +47,68 @@
   ],
   "projects": [
     {
-      "name": "Portfolio Website",
-      "url": "https://github.com/arifuong",
+      "name": "ProjectPBO",
+      "url": "https://github.com/arifuong/projectpbo",
       "homepage": "",
-      "focus": "Personal portfolio",
-      "summary": "A personal portfolio website showcasing projects and skills in web development.",
-      "heroLabel": "Portfolio"
+      "focus": "Java OOP",
+      "summary": "Project Object Oriented Programming menggunakan Java untuk pembelajaran konsep OOP.",
+      "heroLabel": "Java OOP"
     },
     {
-      "name": "Laravel CRUD",
-      "url": "https://github.com/arifuong",
+      "name": "Tracer Study",
+      "url": "https://github.com/arifuong/tracer_study",
       "homepage": "",
-      "focus": "Backend application",
-      "summary": "A full-featured CRUD application built with Laravel demonstrating database operations.",
+      "focus": "Laravel web app",
+      "summary": "Website Tracer Study berbasis Laravel untuk pelacakan alumni.",
       "heroLabel": "Laravel app"
     },
     {
-      "name": "React Dashboard",
-      "url": "https://github.com/arifuong",
+      "name": "Pakar Ginjal",
+      "url": "https://github.com/arifuong/sistem-pakar-ginjal-",
       "homepage": "",
-      "focus": "Frontend dashboard",
-      "summary": "An interactive admin dashboard built with React and modern UI components.",
-      "heroLabel": "Dashboard"
+      "focus": "Expert system",
+      "summary": "Sistem pakar diagnosa penyakit ginjal berbasis web menggunakan metode Certainty Factor.",
+      "heroLabel": "Expert system"
     },
     {
-      "name": "Full Stack App",
-      "url": "https://github.com/arifuong",
+      "name": "TiketKeretaOOP",
+      "url": "https://github.com/arifuong/TiketKeretaOOP",
       "homepage": "",
-      "focus": "Full stack project",
-      "summary": "A complete full stack web application combining Laravel backend with React frontend.",
-      "heroLabel": "Full stack"
+      "focus": "OOP simulation",
+      "summary": "Aplikasi simulasi pemesanan tiket kereta api menggunakan konsep OOP Java.",
+      "heroLabel": "OOP simulation"
+    },
+    {
+      "name": "Pakar Kucing",
+      "url": "https://github.com/arifuong/sistem-pakar_diagnosa-penyakit-kucing-",
+      "homepage": "",
+      "focus": "Expert system",
+      "summary": "Sistem pakar diagnosa penyakit kucing berbasis web untuk deteksi dini.",
+      "heroLabel": "Cat diagnosis"
+    },
+    {
+      "name": "Ketupat Cinta",
+      "url": "https://github.com/arifuong/ketupat_cinta",
+      "homepage": "",
+      "focus": "Interactive web",
+      "summary": "Website interaktif bertema Ketupat Cinta dengan desain modern dan responsif.",
+      "heroLabel": "Interactive web"
+    },
+    {
+      "name": "Aurevia",
+      "url": "https://github.com/arifuong/Aurevia",
+      "homepage": "",
+      "focus": "Web application",
+      "summary": "Modern web application yang sedang dikembangkan dengan teknologi terkini.",
+      "heroLabel": "Web app"
+    },
+    {
+      "name": "Portfolio",
+      "url": "https://arifuong.github.io",
+      "homepage": "https://arifuong.github.io",
+      "focus": "Personal portfolio",
+      "summary": "Personal portfolio website menampilkan proyek dan skills dalam web development.",
+      "heroLabel": "Portfolio"
     }
   ],
   "techStack": [
@@ -89,11 +121,12 @@
     "PHP",
     "Laravel",
     "Node.js",
+    "Python",
+    "Spring Boot",
     "MySQL",
     "Git",
     "GitHub",
-    "VS Code",
-    "Postman"
+    "VS Code"
   ],
   "links": [
     {
