@@ -12,23 +12,22 @@
   <clipPath id="portrait-clip"><rect x="58" y="122" width="604" height="312" rx="12"/></clipPath>
   <mask id="portrait-reveal"><rect x="58" y="122" width="604" height="0" rx="12" fill="white"><animate attributeName="height" from="0" to="312" dur="2.1s" begin="0.12s" fill="freeze"/></rect></mask>
   <clipPath id="system-line-0"><rect x="69" y="505.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="0.68s" fill="freeze"/></rect></clipPath>
-<clipPath id="system-line-1"><rect x="69" y="526.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="0.79s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-2"><rect x="69" y="547.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="0.89s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-3"><rect x="69" y="568.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.00s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-4"><rect x="69" y="589.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.10s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-5"><rect x="69" y="610.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.21s" fill="freeze"/></rect></clipPath>
+<clipPath id="system-line-6"><rect x="69" y="631.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.31s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-7"><rect x="69" y="652.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.42s" fill="freeze"/></rect></clipPath>
-<clipPath id="system-line-8"><rect x="69" y="673.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.52s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-9"><rect x="69" y="694.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.63s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-10"><rect x="69" y="715.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.73s" fill="freeze"/></rect></clipPath>
+<clipPath id="system-line-11"><rect x="69" y="736.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.83s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-12"><rect x="69" y="757.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="1.94s" fill="freeze"/></rect></clipPath>
-<clipPath id="system-line-13"><rect x="69" y="778.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.04s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-14"><rect x="69" y="799.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.15s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-15"><rect x="69" y="820.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.25s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-16"><rect x="69" y="841.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.36s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-18"><rect x="69" y="883.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.57s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-19"><rect x="69" y="904.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.67s" fill="freeze"/></rect></clipPath>
-<clipPath id="system-line-20"><rect x="69" y="925.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.78s" fill="freeze"/></rect></clipPath>
+<clipPath id="system-line-21"><rect x="69" y="946.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="2.89s" fill="freeze"/></rect></clipPath>
   <style>
     .mono { font-family: 'Courier New', Consolas, monospace; }
     .ascii { font-family: 'Courier New', Consolas, monospace; font-size: 6.6px; letter-spacing: -0.15px; fill: url(#ascii-signal); }
@@ -50,7 +49,7 @@
 <rect x="48" y="94" width="624" height="350" rx="14" fill="#FFFFFF" fill-opacity="0.38" stroke="url(#border)" stroke-opacity="0.42"/>
 <rect x="48" y="470" width="624" height="526" rx="14" fill="#FFFFFF" fill-opacity="0.42" stroke="url(#border)" stroke-opacity="0.42"/>
 <text x="66" y="116" class="panel-title">VISUAL.MAP / PORTRAIT.SIGNAL</text>
-<text x="66" y="492" class="panel-title">SYSTEM.INFO / RESEARCH.BUILDER</text>
+<text x="66" y="492" class="panel-title">SYSTEM.INFO / DEVELOPER.PROFILE</text>
 <g clip-path="url(#portrait-clip)" aria-hidden="true">
   <rect x="58" y="122" width="604" height="312" fill="url(#portrait-grid)"/>
   <ellipse cx="360.0" cy="256.2" rx="267.5" ry="104.5" fill="url(#portrait-halo)"/>
@@ -116,25 +115,24 @@
 <tspan x="180" y="428.40" xml:space="preserve">::::::-@%%%%%%%@@@%%%%%%%%%%%%%%%%%%%%%%%@@@%%%%%%@%%%%%%%%%%%%%%%@@@%%%%%%%%@=:::::</tspan>
 <tspan x="180" y="434.10" xml:space="preserve">::::-:=@%%%%%%%%@@@%%%%%%%%%%%%%%%%%%%%%%@@%%%%%%@@%%%%%%%%%%%%%%%@@@%%%%%%%%@+:::::</tspan></text></g>
 <g clip-path="url(#system-line-0)"><text x="72" y="520" class="system-head"><tspan fill="#6D28D9">@arifuong</tspan><tspan fill="#64748B"> ------------------------------------------</tspan></text></g>
-<g clip-path="url(#system-line-1)"><text x="72" y="541" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Subject</tspan><tspan fill="#64748B">: ....... </tspan><tspan fill="#172554">Mohamad Arifin Hasbi</tspan></text></g>
-<g clip-path="url(#system-line-2)"><text x="72" y="562" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Role</tspan><tspan fill="#64748B">: .......... </tspan><tspan fill="#172554">Full Stack Developer | Web Developer</tspan></text></g>
-<g clip-path="url(#system-line-3)"><text x="72" y="583" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Affiliation</tspan><tspan fill="#64748B">: ... </tspan><tspan fill="#172554">STMIK MARDIRA INDONESIA</tspan></text></g>
-<g clip-path="url(#system-line-4)"><text x="72" y="604" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Base</tspan><tspan fill="#64748B">: .......... </tspan><tspan fill="#172554">Majalaya, Bandung, Indonesia</tspan></text></g>
-<g clip-path="url(#system-line-5)"><text x="72" y="625" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Status</tspan><tspan fill="#64748B">: ........ </tspan><tspan fill="#172554">Mahasiswa Informatika</tspan></text></g>
-<g clip-path="url(#system-line-7)"><text x="72" y="667" class="system-section" fill="#047857">- RESEARCH.NODE -----------------------------------</text></g>
-<g clip-path="url(#system-line-8)"><text x="72" y="688" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Primary</tspan><tspan fill="#64748B">: ....... </tspan><tspan fill="#172554">Web Development</tspan></text></g>
-<g clip-path="url(#system-line-9)"><text x="72" y="709" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Direction</tspan><tspan fill="#64748B">: ..... </tspan><tspan fill="#172554">Full Stack Engineering</tspan></text></g>
-<g clip-path="url(#system-line-10)"><text x="72" y="730" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Themes</tspan><tspan fill="#64748B">: ........ </tspan><tspan fill="#172554">Laravel / React / Modern Web</tspan></text></g>
-<g clip-path="url(#system-line-12)"><text x="72" y="772" class="system-section" fill="#047857">- BUILD.LOG -----------------------------------</text></g>
-<g clip-path="url(#system-line-13)"><text x="72" y="793" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">ProjectPBO</tspan><tspan fill="#64748B">: .... </tspan><tspan fill="#172554">RPS Validator</tspan></text></g>
-<g clip-path="url(#system-line-14)"><text x="72" y="814" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Tracer Study</tspan><tspan fill="#64748B">: ... </tspan><tspan fill="#172554">Tracer study</tspan></text></g>
-<g clip-path="url(#system-line-15)"><text x="72" y="835" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Pakar Ginjal</tspan><tspan fill="#64748B">: ... </tspan><tspan fill="#172554">Expert system</tspan></text></g>
-<g clip-path="url(#system-line-16)"><text x="72" y="856" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Pakar Kucing</tspan><tspan fill="#64748B">: ... </tspan><tspan fill="#172554">Cat diagnosis</tspan></text></g>
-<g clip-path="url(#system-line-18)"><text x="72" y="898" class="system-section" fill="#047857">- GRID.LINKS -----------------------------------</text></g>
-<g clip-path="url(#system-line-19)"><text x="72" y="919" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">GitHub</tspan><tspan fill="#64748B">: ........ </tspan><tspan fill="#172554">arifuong</tspan></text></g>
-<g clip-path="url(#system-line-20)"><text x="72" y="940" class="system-footer" fill="#2563EB">signal.locked &gt; PROFILE / BUILD / SHARE</text></g>
-<rect x="74" y="925" width="9" height="15" fill="#0891B2" opacity="0"><animate attributeName="opacity" values="0;0;1;0;1;0;1;0" keyTimes="0;0.03;0.06;0.32;0.5;0.68;0.84;1" dur="1.4s" begin="3.3s" repeatCount="indefinite"/></rect>
-<text x="360" y="1045" text-anchor="middle" class="mono" font-size="10" letter-spacing="1.5" fill="#64748B">FULL STACK DEVELOPMENT / WEB DEVELOPMENT / FRONTEND DEVELOPMENT</text>
+<g clip-path="url(#system-line-2)"><text x="72" y="562" class="system-section" fill="#047857">- SYSTEM.INFO / DEVELOPER.PROFILE -----------------------------------</text></g>
+<g clip-path="url(#system-line-3)"><text x="72" y="583" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Name</tspan><tspan fill="#64748B">: .......... </tspan><tspan fill="#172554">Mohamad Arifin Hasbi</tspan></text></g>
+<g clip-path="url(#system-line-4)"><text x="72" y="604" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Role</tspan><tspan fill="#64748B">: .......... </tspan><tspan fill="#172554">Full Stack Developer</tspan></text></g>
+<g clip-path="url(#system-line-5)"><text x="72" y="625" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Education</tspan><tspan fill="#64748B">: ..... </tspan><tspan fill="#172554">STMIK Mardira Indonesia</tspan></text></g>
+<g clip-path="url(#system-line-6)"><text x="72" y="646" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Location</tspan><tspan fill="#64748B">: ...... </tspan><tspan fill="#172554">Bandung, Indonesia</tspan></text></g>
+<g clip-path="url(#system-line-7)"><text x="72" y="667" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Focus</tspan><tspan fill="#64748B">: ......... </tspan><tspan fill="#172554">Web Development</tspan></text></g>
+<g clip-path="url(#system-line-9)"><text x="72" y="709" class="system-section" fill="#047857">- STACK -----------------------------------</text></g>
+<g clip-path="url(#system-line-10)"><text x="72" y="730" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Laravel</tspan><tspan fill="#64748B">: ....... </tspan><tspan fill="#172554">React</tspan></text></g>
+<g clip-path="url(#system-line-11)"><text x="72" y="751" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">PHP</tspan><tspan fill="#64748B">: ........... </tspan><tspan fill="#172554">JavaScript</tspan></text></g>
+<g clip-path="url(#system-line-12)"><text x="72" y="772" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">MySQL</tspan><tspan fill="#64748B">: ......... </tspan><tspan fill="#172554">Python</tspan></text></g>
+<g clip-path="url(#system-line-14)"><text x="72" y="814" class="system-section" fill="#047857">- PROJECTS -----------------------------------</text></g>
+<g clip-path="url(#system-line-15)"><text x="72" y="835" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Aurevia</tspan><tspan fill="#64748B">: ....... </tspan><tspan fill="#172554">Tracer Study</tspan></text></g>
+<g clip-path="url(#system-line-16)"><text x="72" y="856" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Sistem Pakar</tspan><tspan fill="#64748B">: ... </tspan><tspan fill="#172554">PDF Text Process</tspan></text></g>
+<g clip-path="url(#system-line-18)"><text x="72" y="898" class="system-section" fill="#047857">- GITHUB -----------------------------------</text></g>
+<g clip-path="url(#system-line-19)"><text x="72" y="919" class="system-row"><tspan fill="#64748B">. </tspan><tspan class="system-key" fill="#0891B2">Repo</tspan><tspan fill="#64748B">: .......... </tspan><tspan fill="#172554">github.com/arifuong</tspan></text></g>
+<g clip-path="url(#system-line-21)"><text x="72" y="961" class="system-footer" fill="#2563EB">Building modern web applications.</text></g>
+<rect x="74" y="946" width="9" height="15" fill="#0891B2" opacity="0"><animate attributeName="opacity" values="0;0;1;0;1;0;1;0" keyTimes="0;0.03;0.06;0.32;0.5;0.68;0.84;1" dur="1.4s" begin="3.3s" repeatCount="indefinite"/></rect>
+<text x="360" y="1045" text-anchor="middle" class="mono" font-size="10" letter-spacing="1.5" fill="#64748B">BUILDING MODERN WEB APPLICATIONS</text>
 <rect x="0" y="-70" width="720" height="70" fill="url(#scan)" opacity="0.72" style="mix-blend-mode:multiply"><animateTransform attributeName="transform" type="translate" from="0 -70" to="0 1150" dur="4.5s" repeatCount="indefinite"/></rect>
 <rect x="3" y="3" width="714" height="1074" rx="20" fill="none" stroke="url(#border)" stroke-width="2" opacity="0.76"><animate attributeName="opacity" values="0.5;0.94;0.5" dur="3.4s" repeatCount="indefinite"/></rect>
 </svg>

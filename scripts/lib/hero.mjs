@@ -53,33 +53,30 @@ const layouts = {
 };
 
 function buildProfileLines(config) {
-  const lines = [
+  return [
     { type: "header", value: `@${config.profile.username}` },
-    { type: "row", key: "Subject", value: config.profile.name },
-    { type: "row", key: "Role", value: config.profile.headline },
-    { type: "row", key: "Affiliation", value: config.profile.affiliation },
-    { type: "row", key: "Base", value: config.profile.location },
-    { type: "row", key: "Status", value: config.profile.status },
     { type: "blank" },
-    { type: "section", value: "RESEARCH.NODE" },
-    { type: "row", key: "Primary", value: config.research.primary },
-    { type: "row", key: "Direction", value: config.research.direction },
-    { type: "row", key: "Themes", value: config.research.themes },
+    { type: "section", value: "SYSTEM.INFO / DEVELOPER.PROFILE" },
+    { type: "row", key: "Name", value: config.profile.name },
+    { type: "row", key: "Role", value: "Full Stack Developer" },
+    { type: "row", key: "Education", value: "STMIK Mardira Indonesia" },
+    { type: "row", key: "Location", value: "Bandung, Indonesia" },
+    { type: "row", key: "Focus", value: "Web Development" },
     { type: "blank" },
-    { type: "section", value: "BUILD.LOG" }
+    { type: "section", value: "STACK" },
+    { type: "row", key: "Laravel", value: "React" },
+    { type: "row", key: "PHP", value: "JavaScript" },
+    { type: "row", key: "MySQL", value: "Python" },
+    { type: "blank" },
+    { type: "section", value: "PROJECTS" },
+    { type: "row", key: "Aurevia", value: "Tracer Study" },
+    { type: "row", key: "Sistem Pakar", value: "PDF Text Process" },
+    { type: "blank" },
+    { type: "section", value: "GITHUB" },
+    { type: "row", key: "Repo", value: "github.com/arifuong" },
+    { type: "blank" },
+    { type: "footer", value: "Building modern web applications." }
   ];
-
-  config.projects.slice(0, 4).forEach((project) => {
-    lines.push({ type: "row", key: project.name, value: project.heroLabel });
-  });
-
-  lines.push({ type: "blank" }, { type: "section", value: "GRID.LINKS" });
-  config.links.slice(0, 2).forEach((link) => {
-    lines.push({ type: "row", key: link.label, value: link.value });
-  });
-  lines.push({ type: "footer", value: "signal.locked > PROFILE / BUILD / SHARE" });
-
-  return lines;
 }
 
 async function processPortrait(sourceBuffer, sourcePath) {
@@ -234,7 +231,7 @@ function createHeroSvg(config, colors, size, portrait) {
   const liveX = titlebar.x + titlebar.width - 138;
   const cursorY = layout.system.y + (profileLines.length - 1) * layout.system.lineHeight - 15;
   const terminalUser = config.profile.username.slice(0, isDesktop ? 22 : 14);
-  const footerLabel = config.focus.slice(0, 3).map((item) => item.name.toUpperCase()).join(" / ").slice(0, 64);
+  const footerLabel = "BUILDING MODERN WEB APPLICATIONS";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${layout.width}" height="${layout.height}" viewBox="0 0 ${layout.width} ${layout.height}" role="img" aria-labelledby="title description">
 <title id="title">${escapeXml(config.profile.name)} - ${escapeXml(config.profile.headline)}</title>
@@ -271,7 +268,7 @@ ${isDesktop ? `<circle cx="${liveX}" cy="${titlebar.y + titlebar.height / 2}" r=
 <rect x="${visual.x}" y="${visual.y}" width="${visual.width}" height="${visual.height}" rx="${visual.radius}" fill="${colors.panel}" fill-opacity="0.38" stroke="url(#border)" stroke-opacity="0.42"/>
 <rect x="${info.x}" y="${info.y}" width="${info.width}" height="${info.height}" rx="${info.radius}" fill="${colors.panel}" fill-opacity="0.42" stroke="url(#border)" stroke-opacity="0.42"/>
 <text x="${layout.visualTitle.x}" y="${layout.visualTitle.y}" class="panel-title">VISUAL.MAP / PORTRAIT.SIGNAL</text>
-<text x="${layout.infoTitle.x}" y="${layout.infoTitle.y}" class="panel-title">SYSTEM.INFO / RESEARCH.BUILDER</text>
+<text x="${layout.infoTitle.x}" y="${layout.infoTitle.y}" class="panel-title">SYSTEM.INFO / DEVELOPER.PROFILE</text>
 ${ambientPortrait}
 <g clip-path="url(#portrait-clip)" mask="url(#portrait-reveal)"><text class="ascii">${ascii}</text></g>
 ${system.rows}
