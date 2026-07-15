@@ -36,14 +36,13 @@ Saya senang membangun aplikasi web yang modern, cepat, responsif, dan mudah digu
 
 | Project | Focus | Why it matters |
 | --- | --- | --- |
-| [**ProjectPBO**](https://github.com/arifuong/projectpbo) | Java OOP | Project Object Oriented Programming menggunakan Java untuk pembelajaran konsep OOP. |
-| [**Tracer Study**](https://github.com/arifuong/tracer_study) | Laravel web app | Website Tracer Study berbasis Laravel untuk pelacakan alumni. |
-| [**Pakar Ginjal**](https://github.com/arifuong/sistem-pakar-ginjal-) | Expert system | Sistem pakar diagnosa penyakit ginjal berbasis web menggunakan metode Certainty Factor. |
-| [**TiketKeretaOOP**](https://github.com/arifuong/TiketKeretaOOP) | OOP simulation | Aplikasi simulasi pemesanan tiket kereta api menggunakan konsep OOP Java. |
-| [**Pakar Kucing**](https://github.com/arifuong/sistem-pakar_diagnosa-penyakit-kucing-) | Expert system | Sistem pakar diagnosa penyakit kucing berbasis web untuk deteksi dini. |
-| [**Ketupat Cinta**](https://github.com/arifuong/ketupat_cinta) | Interactive web | Website interaktif bertema Ketupat Cinta dengan desain modern dan responsif. |
-| [**Aurevia**](https://github.com/arifuong/Aurevia) | Web application | Modern web application yang sedang dikembangkan dengan teknologi terkini. |
-| [**Portfolio**](https://arifuong.github.io) | Personal portfolio | Personal portfolio website menampilkan proyek dan skills dalam web development. [Live](https://arifuong.github.io) |
+| [**ProjectPBO**](https://github.com/arifuong/projectpbo) | RPS-BAP Validation | A Flask web application for validating alignment between RPS course plans and BAP lecture realizations using Python and HTML. |
+| [**Tracer Study**](https://github.com/arifuong/tracer_study) | Alumni tracer study | A web application for alumni tracer study data tracking, built with JavaScript and Java as a college final project. |
+| [**Pakar Ginjal**](https://github.com/arifuong/sistem-pakar-ginjal-) | Kidney expert system | A web-based expert system for kidney disease diagnosis using Certainty Factor method with knowledge base and diagnosis history. |
+| [**Pakar Kucing**](https://github.com/arifuong/sistem-pakar_diagnosa-penyakit-kucing-) | Cat disease expert | A CodeIgniter-based expert system for diagnosing cat diseases, built with PHP, JavaScript, and CSS. |
+| [**Ketupat Cinta**](https://github.com/arifuong/ketupat_cinta) | Laravel web app | A Laravel-based interactive web application built with TypeScript, PHP, and Blade templates. |
+| [**Aurevia**](https://github.com/arifuong/Aurevia) | Web application | A modern web application project currently under initial development. |
+| [**arifuong.github.io**](https://github.com/arifuong/arifuong.github.io) | GitHub Pages site | A personal GitHub Pages website with interactive features built using JavaScript, CSS, and HTML. [Live](https://arifuong.github.io) |
 
 ## Research Direction
 

@@ -51,64 +51,56 @@
       "name": "ProjectPBO",
       "url": "https://github.com/arifuong/projectpbo",
       "homepage": "",
-      "focus": "Java OOP",
-      "summary": "Project Object Oriented Programming menggunakan Java untuk pembelajaran konsep OOP.",
-      "heroLabel": "Java OOP"
+      "focus": "RPS-BAP Validation",
+      "summary": "A Flask web application for validating alignment between RPS course plans and BAP lecture realizations using Python and HTML.",
+      "heroLabel": "RPS Validator"
     },
     {
       "name": "Tracer Study",
       "url": "https://github.com/arifuong/tracer_study",
       "homepage": "",
-      "focus": "Laravel web app",
-      "summary": "Website Tracer Study berbasis Laravel untuk pelacakan alumni.",
-      "heroLabel": "Laravel app"
+      "focus": "Alumni tracer study",
+      "summary": "A web application for alumni tracer study data tracking, built with JavaScript and Java as a college final project.",
+      "heroLabel": "Tracer study"
     },
     {
       "name": "Pakar Ginjal",
       "url": "https://github.com/arifuong/sistem-pakar-ginjal-",
       "homepage": "",
-      "focus": "Expert system",
-      "summary": "Sistem pakar diagnosa penyakit ginjal berbasis web menggunakan metode Certainty Factor.",
+      "focus": "Kidney expert system",
+      "summary": "A web-based expert system for kidney disease diagnosis using Certainty Factor method with knowledge base and diagnosis history.",
       "heroLabel": "Expert system"
-    },
-    {
-      "name": "TiketKeretaOOP",
-      "url": "https://github.com/arifuong/TiketKeretaOOP",
-      "homepage": "",
-      "focus": "OOP simulation",
-      "summary": "Aplikasi simulasi pemesanan tiket kereta api menggunakan konsep OOP Java.",
-      "heroLabel": "OOP simulation"
     },
     {
       "name": "Pakar Kucing",
       "url": "https://github.com/arifuong/sistem-pakar_diagnosa-penyakit-kucing-",
       "homepage": "",
-      "focus": "Expert system",
-      "summary": "Sistem pakar diagnosa penyakit kucing berbasis web untuk deteksi dini.",
+      "focus": "Cat disease expert",
+      "summary": "A CodeIgniter-based expert system for diagnosing cat diseases, built with PHP, JavaScript, and CSS.",
       "heroLabel": "Cat diagnosis"
     },
     {
       "name": "Ketupat Cinta",
       "url": "https://github.com/arifuong/ketupat_cinta",
       "homepage": "",
-      "focus": "Interactive web",
-      "summary": "Website interaktif bertema Ketupat Cinta dengan desain modern dan responsif.",
-      "heroLabel": "Interactive web"
+      "focus": "Laravel web app",
+      "summary": "A Laravel-based interactive web application built with TypeScript, PHP, and Blade templates.",
+      "heroLabel": "Laravel app"
     },
     {
       "name": "Aurevia",
       "url": "https://github.com/arifuong/Aurevia",
       "homepage": "",
       "focus": "Web application",
-      "summary": "Modern web application yang sedang dikembangkan dengan teknologi terkini.",
+      "summary": "A modern web application project currently under initial development.",
       "heroLabel": "Web app"
     },
     {
-      "name": "Portfolio",
-      "url": "https://arifuong.github.io",
+      "name": "arifuong.github.io",
+      "url": "https://github.com/arifuong/arifuong.github.io",
       "homepage": "https://arifuong.github.io",
-      "focus": "Personal portfolio",
-      "summary": "Personal portfolio website menampilkan proyek dan skills dalam web development.",
+      "focus": "GitHub Pages site",
+      "summary": "A personal GitHub Pages website with interactive features built using JavaScript, CSS, and HTML.",
       "heroLabel": "Portfolio"
     }
   ],
