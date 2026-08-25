@@ -60,7 +60,6 @@ I focus on building modern web applications using Laravel and React, combining b
 - Aug 4, 2026: pushed 1 commit to [arifuong/portfolio](https://github.com/arifuong/portfolio).
 - Aug 4, 2026: created a branch in [arifuong/portfolio](https://github.com/arifuong/portfolio).
 - Aug 4, 2026: pushed 1 commit to [arifuong/arifuong](https://github.com/arifuong/arifuong).
-- Jul 25, 2026: pushed 1 commit to [arifuong/sistem-pakar_diagnosa-penyakit-kucing-](https://github.com/arifuong/sistem-pakar_diagnosa-penyakit-kucing-).
 <!-- AUTO:ACTIVITY:END -->
 
 ---
