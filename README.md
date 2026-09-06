@@ -57,7 +57,6 @@ I focus on building modern web applications using Laravel and React, combining b
 <!-- AUTO:ACTIVITY:START -->
 - Aug 31, 2026: created a branch in [arifuong/trevel](https://github.com/arifuong/trevel).
 - Aug 16, 2026: pushed 1 commit to [arifuong/portfolio](https://github.com/arifuong/portfolio).
-- Aug 6, 2026: pushed 1 commit to [arifuong/portfolio](https://github.com/arifuong/portfolio).
 <!-- AUTO:ACTIVITY:END -->
 
 ---
